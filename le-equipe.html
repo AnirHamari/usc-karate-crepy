@@ -4,35 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Équipe & Histoire | USC Karaté Crépy</title>
+    <title>L'Équipe & Notre Projet | USC Karaté Crépy</title>
+    <meta name="description"
+        content="Découvrez l'équipe encadrante de l'USC Karaté Crépy. Un collectif soudé tourné vers la formation et l'excellence compétitive.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/club_logo.png" type="image/x-icon">
 </head>
 
 <body class="dark-theme">
+    <div class="watermark-bg"></div>
+
     <header id="main-header">
         <nav class="container">
-            <div class="logo">
-                <span class="yellow-text">USC</span> KARATÉ
-            </div>
+            <a href="index.html" class="logo">
+                <img src="assets/img/club_logo.png" alt="USC Karaté Logo" class="logo-img">
+                <div class="logo-text">USC KARATÉ<br><span class="yellow-text">CRÉPY</span></div>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="palmares.html">Palmarès</a></li>
                 <li><a href="international.html">International</a></li>
                 <li><a href="le-equipe.html" class="active">L'Équipe</a></li>
+                <li><a href="le-club.html">Le Club</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="page-header">
+        <section class="page-header"
+            style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/img/gym_collective.png'); background-size: cover; background-position: center;">
             <div class="container">
-                <h1>Un Collectif, <span class="yellow-text">Une Famille</span></h1>
-                <p>L'USC Karaté Crépy-en-Valois n'est pas qu'un club, c'est un projet sportif et humain porté par un
-                    collectif soudé.</p>
+                <h1>L'Équipe & <span class="yellow-text">Projet Sportif</span></h1>
+                <p>Un collectif uni pour la transmission, la formation et la performance au plus haut niveau.</p>
             </div>
         </section>
 
@@ -40,16 +47,24 @@
             <div class="container">
                 <div class="grid-2">
                     <div class="content reveal">
-                        <h2 class="section-title" style="text-align: left;">Continuité & <span
-                                class="yellow-text">Transmission</span></h2>
-                        <p>Le club assume une continuité sportive, humaine et familiale claire. Porté par des
-                            entraîneurs structurants, l'USC Karaté Crépy forme des athlètes et des citoyens depuis sa
-                            création.</p>
-                        <p>Depuis le début de l'aventure, <strong>237 ceintures noires</strong> ont été formées au sein
-                            du club, témoignant d'une filière de formation performante et durable.</p>
+                        <div class="section-band"></div>
+                        <h2 class="section-title" style="text-align: left;">La <span
+                                class="yellow-text">Formation</span> au cœur du collectif</h2>
+                        <p>L'équipe de l'USC Karaté Crépy place le collectif au centre de sa structuration. Notre
+                            mission est d'accompagner chaque athlète, du pratiquant loisir au compétiteur international,
+                            dans une démarche de progression constante.</p>
+                        <p>Nous privilégions une approche moderne du karaté Shotokan, centrée sur l'efficacité en kumite
+                            et la précision technique. Fort de son histoire, le club a formé plus de <strong>237 ceintures noires</strong> depuis sa création, témoignant d'une continuité et d'un savoir-faire unique dans la région.</p>
+                        <ul class="check-list">
+                            <li><strong>Transmission</strong> : Partage d'expérience entre générations.</li>
+                            <li><strong>Modernité</strong> : Pédagogie active et préparation physique intégrée.</li>
+                            <li><strong>Crédibilité</strong> : Encadrement diplômé et affiliation FFK.</li>
+                        </ul>
                     </div>
                     <div class="image-box reveal">
-                        <img src="assets/img/team_huddle.jpg" alt="Collectif USC Karaté" class="rounded">
+                        <img src="assets/img/kata_jump_high.jpg" alt="Performance USC" class="rounded glass">
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 10px; text-align: center;">
+                            Excellence technique et dépassement de soi.</p>
                     </div>
                 </div>
             </div>
@@ -57,30 +72,89 @@
 
         <section class="section-padding bg-alt">
             <div class="container">
-                <h2 class="section-title">Encadrement <span class="yellow-text">Structurant</span></h2>
-                <p class="text-center" style="max-width: 800px; margin: 0 auto 50px;">Le cœur du projet sportif est
-                    animé par des entraîneurs d'expérience qui placent le collectif au centre de leur pédagogie.
-                </p>
+                <h2 class="section-title">Organisation <span class="yellow-text">Humaine</span></h2>
+                <div class="team-grid">
+                    <!-- Mohamed Dahmani -->
+                    <div class="team-card reveal">
+                        <div class="team-img-wrapper">
+                            <img src="assets/img/staff_profile.jpg" alt="Mohamed Dahmani">
+                        </div>
+                        <div class="team-info">
+                            <span class="team-role">Entraîneur Référent</span>
+                            <h3>Mohamed Dahmani</h3>
+                            <p class="team-desc">Fondateur et garant de la cohésion du club. Il assure la direction
+                                technique et la transmission des valeurs fondamentales de l'USC.</p>
+                        </div>
+                    </div>
+                    <!-- Sofiane Dahmani -->
+                    <div class="team-card reveal">
+                        <div class="team-img-wrapper">
+                            <img src="assets/img/champion_podium.jpg" alt="Sofiane Dahmani">
+                        </div>
+                        <div class="team-info">
+                            <span class="team-role">Responsable Formation</span>
+                            <h3>Sofiane Dahmani</h3>
+                            <p class="team-desc">Spécialiste de la filière jeunes. Il structure la progression technique
+                                et tactique des futurs champions du club.</p>
+                        </div>
+                    </div>
+                    <!-- Encadrement Collectif -->
+                    <div class="team-card reveal">
+                        <div class="team-img-wrapper">
+                            <img src="assets/img/gym_collective.png" alt="Encadrement Collectif">
+                        </div>
+                        <div class="team-info">
+                            <span class="team-role">Encadrement & Staff</span>
+                            <h3>Le Collectif USC</h3>
+                            <p class="team-desc">Une équipe d'assistants et de bénévoles mobilisés pour l'organisation
+                                des événements et le soutien logistique des compétiteurs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container text-center">
+                <h2 class="section-title">Le Club en <span class="yellow-text">Chiffres Clés</span></h2>
+                <div class="stats" style="margin-top: 40px;">
+                    <div class="stat-item">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Licenciés</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">40</span>
+                        <span class="stat-label">Compétiteurs réguliers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">80+</span>
+                        <span class="stat-label">Podiums / Saison</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Titres Nationaux cumulés</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-alt">
+            <div class="container">
                 <div class="grid-2">
                     <div class="image-box reveal">
-                        <img src="assets/img/gym_group.png" alt="Formation USC" class="rounded">
+                        <img src="assets/img/gym_collective.png" alt="Esprit d'équipe" class="rounded">
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 10px; text-align: center;">La
+                            relève du club : formation dès 4 ans.</p>
                     </div>
                     <div class="content reveal">
-                        <div class="instructor-card glass" style="padding: 30px; margin-bottom: 20px;">
-                            <h4>Mohamed Dahmani</h4>
-                            <p class="yellow-text" style="font-weight: 700;">Entraîneur Référent</p>
-                            <p>Garant des valeurs sportives et de la cohésion du club.</p>
-                        </div>
-                        <div class="instructor-card glass" style="padding: 30px; margin-bottom: 20px;">
-                            <h4>Sofiane Dahmani</h4>
-                            <p class="yellow-text" style="font-weight: 700;">Responsable Formation</p>
-                            <p>Spécialiste de la filière jeunes, il structure la progression des compétiteurs.</p>
-                        </div>
-                        <div class="instructor-card glass" style="padding: 30px;">
-                            <h4>L'Esprit de Groupe</h4>
-                            <p>La transmission est le pilier central. Chaque athlète contribue à la force de l'équipe,
-                                dans un environnement sain et motivant.</p>
-                        </div>
+                        <h2 class="section-title" style="text-align: left;">Saison <span class="yellow-text">2025</span>
+                            : Vers de nouveaux sommets</h2>
+                        <p>Fort de son expérience et de sa structuration, l'USC Karaté Crépy continue d'évoluer. Cette
+                            saison, notre mobilisation collective atteint des records avec plus de 40 compétiteurs
+                            engagés sur les circuits officiels.</p>
+                        <p>Grâce au soutien de la ville de Crépy-en-Valois et de nos partenaires, nous offrons à nos
+                            membres un cadre de pratique performant et convivial.</p>
+                        <a href="contact.html" class="btn btn-primary">Nous contacter</a>
                     </div>
                 </div>
             </div>
@@ -91,19 +165,65 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <div class="logo"><span class="yellow-text">USC</span> KARATÉ</div>
-                    <p>USC Karaté Crépy-en-Valois</p>
-                    <p style="font-size: 0.75rem; margin-top: 20px; color: var(--text-muted);">
-                        Données issues de la FFK et des réseaux sociaux officiels du club (Facebook et Instagram).
-                        Certaines données sont agrégées ou estimées en l’absence de bilan officiel unique.
-                    </p>
+                    <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                        <img src="assets/img/club_logo.png" alt="USC Karaté Logo" class="logo-img">
+                        <div class="logo-text">USC KARATÉ<br><span class="yellow-text">CRÉPY</span></div>
+                    </a>
+                    <p>Salle Marcel Quentin, Avenue du Général de Gaulle, 60800 Crépy-en-Valois</p>
+                    <div class="ffk-label" style="margin-top: 20px;">
+                        <div class="ffk-dot"></div>
+                        Affilié Fédération Française de Karaté (FFK)
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="palmares.html">Palmarès</a></li>
+                        <li><a href="le-equipe.html">L'Équipe</a></li>
+                        <li><a href="le-club.html">Le Club</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Suivez-nous</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/p/Usc-Karat%C3%A9-Crepy-en-Valois-100063634415080/?locale=fr_FR"
+                                target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/usc_karate_crepy/" target="_blank">Instagram</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 USC Karaté Crépy-en-Valois. Tous droits réservés.</p>
+                <p style="font-size: 0.7rem; opacity: 0.6; max-width: 400px; text-align: right;">Données issues des
+                    publications FFK, des comités Oise et Hauts-de-France, ainsi que des réseaux sociaux officiels du
+                    club (Facebook / Instagram).</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            revealElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+    </script>
 </body>
 
 </html>

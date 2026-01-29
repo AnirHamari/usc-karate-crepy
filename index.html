@@ -4,39 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USC Karaté Crépy-en-Valois | Club Compétition & Formation</title>
+    <title>USC Karaté Crépy-en-Valois | Club Performance & Formation</title>
     <meta name="description"
-        content="Site officiel de l'USC Karatê Crépy-en-Valois. Club moderne, collectif et compétitif. Domination territoriale et excellence sportive en Hauts-de-France.">
+        content="Site officiel de l'USC Karaté Crépy-en-Valois. Club d'excellence Shotokan, tourné vers la compétition nationale et la formation des jeunes.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/club_logo.png" type="image/x-icon">
 </head>
 
 <body class="dark-theme">
+    <div class="watermark-bg"></div>
+
     <header id="main-header">
         <nav class="container">
-            <div class="logo">
-                <span class="yellow-text">USC</span> KARATÉ
-            </div>
+            <a href="index.html" class="logo">
+                <img src="assets/img/club_logo.png" alt="USC Karaté Logo" class="logo-img">
+                <div class="logo-text">USC KARATÉ<br><span class="yellow-text">CRÉPY</span></div>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Accueil</a></li>
                 <li><a href="palmares.html">Palmarès</a></li>
                 <li><a href="international.html">International</a></li>
                 <li><a href="le-equipe.html">L'Équipe</a></li>
+                <li><a href="le-club.html">Le Club</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <!-- Hero Section -->
+        <section class="hero"
+            style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/img/gym_collective.png'); background-size: cover; background-position: center;">
             <div class="container hero-content">
                 <h1 class="reveal-text">USC <span class="yellow-text">Karaté</span> Crépy-en-Valois</h1>
-                <p class="fade-in">Un club moderne, collectif et compétitif. Plus qu'une équipe, une famille de sportifs
-                    ancrée au cœur de l'Oise.</p>
+                <p class="fade-in">Un club moderne, collectif et compétitif. Une famille de sportifs ancrée au cœur de
+                    l'Oise, tournée vers l'excellence.</p>
                 <div class="hero-btns fade-in">
-                    <a href="contact.html" class="btn btn-primary">Nous rejoindre</a>
+                    <a href="le-club.html" class="btn btn-primary">Découvrir le club</a>
                     <a href="palmares.html" class="btn btn-outline">Voir le palmarès</a>
                 </div>
             </div>
@@ -46,60 +53,74 @@
             </div>
         </section>
 
-        <section class="stats container">
-            <div class="stat-item glass">
-                <span class="stat-number">250+</span>
-                <span class="stat-label">Médailles cumulées</span>
-            </div>
-            <div class="stat-item glass">
-                <span class="stat-number">237</span>
-                <span class="stat-label">Ceintures Noires formées</span>
-            </div>
-            <div class="stat-item glass">
-                <span class="stat-number">Top-3</span>
-                <span class="stat-label">Meilleurs clubs de l'Oise</span>
-            </div>
-            <div class="stat-item glass">
-                <span class="stat-number">2025</span>
-                <span class="stat-label">Présence Youth League</span>
-            </div>
-        </section>
-
-        <section class="home-intro section-padding">
+        <!-- Stats Section -->
+        <section class="section-padding">
             <div class="container">
-                <div class="intro-grid">
-                    <div class="intro-text reveal">
-                        <h2 class="section-title" style="text-align: left;">Une <span class="yellow-text">famille
-                                sportive</span> unie</h2>
-                        <p>L'USC Karaté Crépy-en-Valois est un club dynamique où le collectif est au cœur du projet
-                            sportif. Notre ambition est de former des athlètes complets dans un esprit d'entraide et de
-                            dépassement de soi.
-                        </p>
-                        <p>Sous l'impulsion de <strong>Mohamed Dahmani</strong> et <strong>Sofiane Dahmani</strong>, le
-                            club domine les compétitions départementales et régionales en Hauts-de-France, tout en
-                            rayonnant au niveau national et international.</p>
-                        <ul class="check-list">
-                            <li>Filière jeunes dominante (Poussins à Cadets)</li>
-                            <li>Formation d'excellence et transmission</li>
-                            <li>Esprit de groupe et cohésion sociale</li>
-                        </ul>
+                <div class="stats">
+                    <div class="stat-item reveal">
+                        <span class="stat-number">250+</span>
+                        <span class="stat-label">Médailles cumulées</span>
                     </div>
-                    <div class="intro-img reveal">
-                        <img src="assets/img/gym_group.png" alt="Groupe USC Karaté Crépy">
+                    <div class="stat-item reveal">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Licenciés</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number">80+</span>
+                        <span class="stat-label">Podiums / Saison</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Titres Nationaux</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="gallery section-padding bg-alt">
+        <!-- Intro Section -->
+        <section class="section-padding bg-alt">
             <div class="container">
-                <h2 class="section-title">Le Club <span class="yellow-text">en images</span></h2>
-                <div class="photo-grid">
-                    <div class="photo-item reveal"><img src="assets/img/action_kick_1.jpg" alt="Action Compétition">
+                <div class="grid-2">
+                    <div class="intro-text reveal">
+                        <div class="section-band"></div>
+                        <h2 class="section-title" style="text-align: left;">Une <span class="yellow-text">École de
+                                Vie</span> et de Performance</h2>
+                        <p>L'USC Karaté Crépy est un club historique créé en 1999 par <strong>Mohamed Dahmani</strong>.
+                            Affilié à la FFK, le club se distingue par son exigence et son esprit d'union.</p>
+                        <p>De la formation des enfants dès 4 ans aux compétitions internationales, nous cultivons le
+                            dépassement de soi dans un environnement moderne et collectif.</p>
+                        <ul class="check-list">
+                            <li>Formation d'excellence Shotokan.</li>
+                            <li>Collectif orienté compétition et réussite.</li>
+                            <li>Encadrement diplomé et structuré.</li>
+                        </ul>
                     </div>
-                    <div class="photo-item reveal"><img src="assets/img/team_huddle.jpg" alt="Collectif USC"></div>
-                    <div class="photo-item reveal"><img src="assets/img/kata_athlete.jpg" alt="Performance Kata"></div>
-                    <div class="photo-item reveal"><img src="assets/img/competition_kick_2.jpg" alt="Combat Kumite">
+                    <div class="intro-img reveal">
+                        <img src="assets/img/gym_collective.png" alt="Collectif USC" class="rounded glass">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Le Club <span class="yellow-text">en Action</span></h2>
+                <div class="team-grid">
+                    <div class="team-card reveal">
+                        <div class="team-img-wrapper">
+                            <img src="assets/img/kata_jump_high.jpg" alt="Action Shot">
+                        </div>
+                    </div>
+                    <div class="team-card reveal">
+                        <div class="team-img-wrapper">
+                            <img src="assets/img/champion_podium.jpg" alt="Podium Shot">
+                        </div>
+                    </div>
+                    <div class="team-card reveal">
+                        <div class="team-img-wrapper">
+                            <img src="assets/img/action_kick_1.jpg" alt="Combat Shot">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -110,36 +131,40 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <div class="logo"><span class="yellow-text">USC</span> KARATÉ</div>
-                    <p>USC Karaté Crépy-en-Valois</p>
-                    <p>Maison des Sports de Combat</p>
-                    <p style="font-size: 0.75rem; margin-top: 20px; color: var(--text-muted);">
-                        Données issues de la FFK et des réseaux sociaux officiels du club (Facebook et Instagram).
-                        Certaines données sont agrégées ou estimées en l’absence de bilan officiel unique.
-                    </p>
+                    <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                        <img src="assets/img/club_logo.png" alt="USC Karaté Logo" class="logo-img">
+                        <div class="logo-text">USC KARATÉ<br><span class="yellow-text">CRÉPY</span></div>
+                    </a>
+                    <p>Salle Marcel Quentin, 60800 Crépy-en-Valois</p>
+                    <div class="ffk-label" style="margin-top: 20px;">
+                        <div class="ffk-dot"></div>
+                        Affilié Fédération Française de Karaté (FFK)
+                    </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Liens Rapides</h4>
+                    <h4>Navigation</h4>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="palmares.html">Palmarès</a></li>
                         <li><a href="le-equipe.html">L'Équipe</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="le-club.html">Le Club</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Réseaux Sociaux</h4>
+                    <h4>Suivez-nous</h4>
                     <ul>
                         <li><a href="https://www.facebook.com/p/Usc-Karat%C3%A9-Crepy-en-Valois-100063634415080/?locale=fr_FR"
-                                target="_blank">Facebook</a>
-                        </li>
+                                target="_blank">Facebook</a></li>
                         <li><a href="https://www.instagram.com/usc_karate_crepy/" target="_blank">Instagram</a></li>
                     </ul>
                 </div>
             </div>
+            <hr style="border: none; border-top: 1px solid var(--glass-border); margin: 40px 0;">
             <div class="footer-bottom">
                 <p>&copy; 2026 USC Karaté Crépy-en-Valois. Tous droits réservés.</p>
-                <p>Affilié FFK</p>
+                <p style="font-size: 0.7rem; opacity: 0.6; text-align: right; max-width: 550px;">Données issues des
+                    publications FFK, des comités Oise et Hauts-de-France, et des réseaux sociaux officiels du club.
+                    Certaines données sont agrégées ou estimées.</p>
             </div>
         </div>
     </footer>
