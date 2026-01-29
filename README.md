@@ -23,7 +23,7 @@ Bienvenue sur le dépôt du site officiel de l'**USC Karaté Shotokan de Crépy-
 
 Le site est hébergé via **GitHub Pages**.
 
-🔗 **Lien du site** : [https://anirhamari.github.io/usc-karate-crepy./](https://anirhamari.github.io/usc-karate-crepy./)
+🔗 **Lien du site** : [https://anirhamari.github.io/usc-karate-crepy/]([https://anirhamari.github.io/usc-karate-crepy/]) 
 *(Note : une fois le site configuré dans les réglages de GitHub Pages, il peut falloir quelques minutes pour se propager)*
 
 ---
