@@ -2,17 +2,17 @@
 
 :root {
     /* Colors */
-    --bg-dark: #0a0a0a;
-    --bg-surface: #121212;
-    --bg-card: #1a1a1a;
-    --accent-gold: #c5a059;
-    --accent-gold-light: #e0c085;
-    --accent-red: #cc2a36;
+    --bg-dark: #000000;
+    --bg-surface: #0a0a0a;
+    --bg-card: #121212;
+    --accent-yellow: #ffde00;
+    /* Vibrant Yellow */
+    --accent-yellow-light: #fff000;
     --text-primary: #ffffff;
-    --text-secondary: #a0a0a0;
-    --text-muted: #666666;
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --text-secondary: #cccccc;
+    --text-muted: #888888;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
 
     /* Spacing */
     --section-padding: 100px 5%;
@@ -74,16 +74,8 @@ img {
 }
 
 /* Typography Utilities */
-.text-gold {
-    color: var(--accent-gold);
-}
-
-.text-red {
-    color: var(--accent-red);
-}
-
 .text-gradient {
-    background: linear-gradient(135deg, var(--accent-gold), #fff);
+    background: linear-gradient(135deg, var(--accent-yellow), #ffffff);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -112,24 +104,24 @@ img {
 }
 
 .btn-primary {
-    background-color: var(--accent-gold);
+    background-color: var(--accent-yellow);
     color: #000;
 }
 
 .btn-primary:hover {
-    background-color: var(--accent-gold-light);
+    background-color: var(--accent-yellow-light);
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(197, 160, 89, 0.2);
+    box-shadow: 0 10px 20px rgba(255, 222, 0, 0.3);
 }
 
 .btn-outline {
     background-color: transparent;
-    border: 1px solid var(--accent-gold);
-    color: var(--accent-gold);
+    border: 1px solid var(--accent-yellow);
+    color: var(--accent-yellow);
 }
 
 .btn-outline:hover {
-    background-color: var(--accent-gold);
+    background-color: var(--accent-yellow);
     color: #000;
 }
 
@@ -191,7 +183,7 @@ nav .container {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--accent-gold);
+    background-color: var(--accent-yellow);
     transition: var(--transition-smooth);
 }
 
@@ -242,7 +234,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-yellow);
     margin-left: 5px;
 }
 
@@ -312,7 +304,7 @@ footer {
 .scroll-down .line {
     width: 1px;
     height: 60px;
-    background: linear-gradient(to bottom, var(--accent-gold), transparent);
+    background: linear-gradient(to bottom, var(--accent-yellow), transparent);
     margin-top: 10px;
 }
 
@@ -337,14 +329,14 @@ footer {
 
 .stat-item:hover {
     transform: translateY(-5px);
-    border-color: var(--accent-gold);
+    border-color: var(--accent-yellow);
 }
 
 .stat-number {
     display: block;
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--accent-gold);
+    color: var(--accent-yellow);
     font-family: 'Outfit', sans-serif;
     margin-bottom: 5px;
 }
@@ -418,7 +410,7 @@ footer {
 .badge {
     display: inline-block;
     padding: 5px 15px;
-    background-color: var(--accent-red);
+    background-color: var(--accent-yellow);
     color: #fff;
     font-size: 0.7rem;
     font-weight: 700;
@@ -687,7 +679,7 @@ tr:last-child td {
 
 .historic-item {
     padding: 40px;
-    border-left: 2px solid var(--accent-gold);
+    border-left: 2px solid var(--accent-yellow);
     background: var(--bg-surface);
 }
 
