@@ -1296,6 +1296,7 @@ tr:last-child td {
         padding: 40px;
     }
 }
+
 /* Team Specific & Enhanced Cards */
 .team-grid {
     display: grid;
@@ -1412,4 +1413,153 @@ tr:last-child td {
     height: 10px;
     background: #cc0000;
     border-radius: 50%;
+}
+
+/* ========== NEWS CAROUSEL ========== */
+.news-carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px;
+    max-width: 800px;
+}
+
+.carousel-text {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+}
+
+.carousel-text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--accent-yellow);
+    text-transform: uppercase;
+}
+
+.carousel-text p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Carousel Navigation Buttons */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    font-size: 2rem;
+    padding: 15px 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.carousel-nav:hover {
+    background: rgba(255, 222, 0, 0.2);
+    border-color: var(--accent-yellow);
+    color: var(--accent-yellow);
+}
+
+.carousel-nav.prev {
+    left: 20px;
+}
+
+.carousel-nav.next {
+    right: 20px;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator:hover {
+    background: rgba(255, 222, 0, 0.5);
+    border-color: var(--accent-yellow);
+}
+
+.indicator.active {
+    background: var(--accent-yellow);
+    border-color: var(--accent-yellow);
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Responsive Carousel */
+@media (max-width: 768px) {
+    .news-carousel {
+        height: 400px;
+    }
+
+    .carousel-text h3 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-text p {
+        font-size: 1rem;
+    }
+
+    .carousel-nav {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+
+    .carousel-nav.prev {
+        left: 10px;
+    }
+
+    .carousel-nav.next {
+        right: 10px;
+    }
 }
